@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Xiaohongshu browser plugin">
+  <rect x="2" y="10" width="60" height="44" rx="9" fill="#ff2e4d"/>
+  <rect x="2" y="10" width="60" height="13" rx="9" fill="#d81e3c"/>
+  <circle cx="13" cy="16.5" r="2.2" fill="#ffd9de"/>
+  <circle cx="20" cy="16.5" r="2.2" fill="#ffd9de"/>
+  <circle cx="27" cy="16.5" r="2.2" fill="#ffd9de"/>
+  <path d="M20 32h24a5 5 0 0 1 5 5v6a5 5 0 0 1-5 5H30l-8 6v-6h-2a5 5 0 0 1-5-5v-6a5 5 0 0 1 5-5z" fill="#fff"/>
+  <circle cx="25" cy="40" r="2.4" fill="#ff2e4d"/>
+  <circle cx="32" cy="40" r="2.4" fill="#ff2e4d"/>
+  <circle cx="39" cy="40" r="2.4" fill="#ff2e4d"/>
+</svg>

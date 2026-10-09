@@ -1,0 +1,19 @@
+# Runtime artifacts that must never be published.
+# Screenshots of a logged-in session and the write-audit trail are private data.
+.xhs-shots/
+.xhs-audit.jsonl
+
+# Throwaway Chrome profiles created by the scripts under scripts/.
+scripts/.tmp-chrome-*/
+
+# Standard Node noise (this package has no dependencies, but scripts may add some).
+node_modules/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+# Inserts the Xiaohongshu browser driver as one Host plugin row.
+# `config` is the plugin's own schema; see README.md for every field.
+- insert:
+    - id: xhs-browser
+      name: '@local/xhs-browser'
+      config:
+        debugPort: 9333
+        headless: false
+        # auto   — writes run immediately, no interactive gate, fully audited
+        # approve — the DSH approval service must grant each write first
+        # blocked — every write is refused
+        writeActions: auto
+        auditLog: true

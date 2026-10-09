@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Xiaohongshu (RED) Browser",
+    "description": "Operate a real, logged-in Xiaohongshu session over the DevTools Protocol: read notes, search, comment, send direct messages, and publish image notes. Every irreversible action is approved by you first."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@local/xhs-browser",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Drive Xiaohongshu (RED) inside a real Chrome through the DevTools Protocol: read notes, search, comment, send direct messages, and publish image notes.",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "scripts",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "meta": {
+    "title": "Xiaohongshu (RED) Browser",
+    "description": "Operate a real, logged-in Xiaohongshu session over CDP: read, comment, DM, publish."
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

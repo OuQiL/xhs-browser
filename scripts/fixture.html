@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>interaction fixture</title>
+<style>
+  body { font: 14px/1.5 system-ui, sans-serif; margin: 0; padding: 24px; }
+  #off { position: absolute; left: 3000px; top: 12px; }
+  #overlay { position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 10; display: none; }
+  #ed { border: 1px solid #999; min-height: 48px; margin: 12px 0; padding: 6px; }
+  .pad { height: 1400px; }
+</style>
+</head>
+<body>
+  <h1>interaction fixture</h1>
+  <input id="a" placeholder="type here">
+  <button id="b">Press Me</button>
+  <div id="ed" contenteditable="true"></div>
+  <button id="off">Press Me</button>
+  <button id="over">Show Overlay</button>
+  <div id="overlay"><button id="hide">Hide Overlay</button></div>
+
+  <script>
+    window.state = { clicked: 0, overlayShown: 0 };
+    document.getElementById('b').addEventListener('click', function () { window.state.clicked += 1; });
+    document.getElementById('over').addEventListener('click', function () {
+      window.state.overlayShown += 1;
+      document.getElementById('overlay').style.display = 'block';
+    });
+    document.getElementById('hide').addEventListener('click', function () {
+      document.getElementById('overlay').style.display = 'none';
+    });
+  </script>
+
+  <div class="pad"></div>
+  <button id="deep">Deep Button</button>
+</body>
+</html>
